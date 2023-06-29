@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jogo 2048</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body>
+    
+    <header>
+      </header>
+      <div class="container">
+        <div class="directions">
+          <p><strong>Para Jogar
+            :</strong> Use as setas do teclado para mover as peças. Quando duas peças deslizam uma na outra, elas se fundem em uma só!</p>
+        </div>
+        <div class="scores">
+          <div class="score-container best-score">
+            Melhor: 
+            <div class="score">
+              <div id="bestScore">0</div>
+            </div>
+          </div>
+          <div class="score-container">
+            Pontos: 
+            <div class="score">
+              <div id="score">0</div>
+              <div class="add" id="add"></div>
+            </div>
+          </div>
+        </div>
+        <div class="game">
+          <div id="tile-container" class="tile-container"></div>
+          <div class="end" id="end">Fim de Jogodiv class="monkey">🙈</div>
+          <button class="btn not-recommended__item js-restart-btn" id="try-again">Tente de Novo</button></div>
+        </div>
+        
+        <div class="not-recommended">
+          <button class="btn not-recommended__item js-restart-btn" id="restart">Reiniciar</button>
+          <span class="not-recommended__annotation"></span>
+        </div>
+        
+      </div>
+
+      <script src='main.js'></script>
+</body>
+</html>
